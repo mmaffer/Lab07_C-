@@ -1,5 +1,5 @@
 using Biblioteca.Datos;
-using Biblioteca.Datos.Interfaces;
+using Biblioteca.Negocio.Interfaces;
 using Biblioteca.Entidades;
 
 namespace Biblioteca.Negocio;

@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 namespace Biblioteca.Datos;
 
 // Capa de Datos: ejecuta las transacciones, pero NO decide reglas. Las reglas ya las validó Negocio.
-public class PrestamoRepositorio : IPrestamoRepositorio
+public class PrestamoRepositorio : IPrestamoRepositorio, Biblioteca.Negocio.Interfaces.IPrestamoRepositorio
 {
     // Cabecera + detalles + descuento de ejemplares: si algo falla, el rollback deja todo como estaba.
     public async Task<int> RegistrarAsync(Prestamo prestamo)

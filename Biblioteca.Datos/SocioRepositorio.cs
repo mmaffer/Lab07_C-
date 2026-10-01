@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 namespace Biblioteca.Datos;
 
 // Capa de Datos: solo habla con la base de datos. No valida reglas ni muestra mensajes.
-public class SocioRepositorio : ISocioRepositorio
+public class SocioRepositorio : ISocioRepositorio, Biblioteca.Negocio.Interfaces.ISocioRepositorio
 {
     private const string SelectColumnas = "SELECT SocioId, DNI, Nombre, Email, Activo FROM Socios";
 

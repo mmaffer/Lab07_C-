@@ -6,7 +6,7 @@ namespace Biblioteca.Datos;
 
 // Capa de Datos: solo habla con la base de datos. No valida reglas ni muestra mensajes.
 // Consultas siempre parametrizadas (nunca concatenadas) para evitar inyección SQL.
-public class LibroRepositorio : ILibroRepositorio
+public class LibroRepositorio : ILibroRepositorio, Biblioteca.Negocio.Interfaces.ILibroRepositorio
 {
     // Libros con el nombre de su autor (JOIN): LibroId, Titulo, ISBN, AutorId, Ejemplares, Activo, Autor.
     private const string SelectConAutor = @"

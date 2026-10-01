@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 namespace Biblioteca.Datos;
 
 // Lecturas sobre DetallePrestamo. Un libro "pendiente" tiene FechaDevolucion NULL.
-public class DetallePrestamoRepositorio : IDetallePrestamoRepositorio
+public class DetallePrestamoRepositorio : IDetallePrestamoRepositorio, Biblioteca.Negocio.Interfaces.IDetallePrestamoRepositorio
 {
     public async Task<DetallePrestamo> ObtenerAsync(int prestamoId, int libroId)
     {

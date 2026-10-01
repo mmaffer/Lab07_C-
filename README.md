@@ -98,6 +98,12 @@ Cuando una regla no se cumple, lanza `ReglaNegocioException` con un mensaje clar
 
 ---
 
+Nota sobre contribuciones y pruebas
+- Se añadió un pequeño proyecto de tests (Biblioteca.Negocio.Tests) con pruebas unitarias básicas para facilitar verificaciones rápidas.
+- También hay un archivo CONTRIBUTING.md con pautas mínimas para commits y push al repositorio.
+
+---
+
 ## Base de datos
 
 Archivo: [`Script-BibliotecaDB.sql`](Script-BibliotecaDB.sql)

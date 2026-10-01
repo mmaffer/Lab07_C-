@@ -5,7 +5,7 @@ using Microsoft.Data.SqlClient;
 namespace Biblioteca.Datos;
 
 // Capa de Datos: solo habla con la base de datos. No valida reglas ni muestra mensajes.
-public class AutorRepositorio : IAutorRepositorio
+public class AutorRepositorio : IAutorRepositorio, Biblioteca.Negocio.Interfaces.IAutorRepositorio
 {
     public async Task<List<Autor>> ListarActivosAsync()
     {
